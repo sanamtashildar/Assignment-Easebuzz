@@ -1,5 +1,7 @@
 import pytest
 import requests
+import json
+
 
 BASE_URL = "https://jsonplaceholder.typicode.com"
 
@@ -29,7 +31,6 @@ def get_response(api_client):
     
     return _get
 
-import json
 
 def load_schema(path):
     with open(path) as f:

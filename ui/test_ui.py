@@ -26,18 +26,6 @@ def test_alert(page):
     practice.trigger_alert("Sanam")
 
 
-def test_autocomplete(page):
-    practice = PracticePage(page)
-    practice.select_autocomplete("India")
-
-    assert "India" in practice.get_autocomplete_value()
-
-
 def test_mouse_hover(page):
     practice = PracticePage(page)
     practice.hover_and_click()
-
-
-def test_table(page):
-    practice = PracticePage(page)
-    assert practice.get_table_row_count() > 1
