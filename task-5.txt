@@ -1,0 +1,33 @@
+Q- You are leading a team of 4 QA engineers. The sprint velocity is dropping due to flaky automation tests. How will you handle this situation?
+
+In this situation, my first priority is to restore trust in automation, because flaky tests directly impact team productivity and confidence.
+
+I would start by stabilizing the pipeline—identifying and temporarily quarantining flaky tests so they don’t block releases. At the same time, I’d analyze failure patterns using reports to understand whether the root cause is related to test design, environment instability, or data issues.
+
+Next, I’d drive a systematic fix:
+
+Improve test reliability by replacing hard waits with proper synchronization and fixing brittle locators
+Ensure test data isolation, especially in parallel execution
+Collaborate with DevOps to stabilize environments or introduce mocks where needed
+
+I’d assign ownership of flaky tests within the team and track a clear metric like flaky test percentage. I’d also set a guideline such as pausing new automation until stability improves.
+
+Q - During production release, you find 2 critical bugs reported by the client that were missed in QA. What’s your approach to fix gaps in process and testing?
+
+When critical bugs are reported in production, my first step is to quickly assess the impact and verify the issue across environments.
+
+I would immediately check whether the same issue exists in pre-prod, staging, or UAT. This helps determine if the gap was due to:
+
+A missed test scenario
+An environment mismatch
+Or a deployment/configuration issue
+
+If the bug is reproducible in lower environments, it indicates a testing or coverage gap. If not, I investigate environment differences, such as data, configurations, or third-party integrations.
+
+In parallel, I coordinate with the development team for a hotfix, validate the fix, and ensure safe deployment.
+
+Post-resolution, I conduct a root cause analysis focusing on:
+
+Why the scenario was not covered in QA
+Whether requirements or acceptance criteria were unclear
+Gaps in regression or test data
