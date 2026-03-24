@@ -2,12 +2,8 @@ import pytest
 import time
 from jsonschema import validate
 
-from api.schema_config import POST_SCHEMA, COMMENT_SCHEMA, USER_SCHEMA
+from schema_config import POST_SCHEMA, COMMENT_SCHEMA, USER_SCHEMA
 
-
-# ---------------------------
-# Test 1: Response Time
-# ---------------------------
 
 @pytest.mark.parametrize("endpoint", ["/posts", "/comments", "/users"])
 def test_response_time(get_response, endpoint):

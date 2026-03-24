@@ -2,7 +2,7 @@ import json
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SCHEMAS_DIR = os.path.join(BASE_DIR, "api", "schemas")
+SCHEMAS_DIR = os.path.join(BASE_DIR, "schemas")
 
 
 def _load_schema(file_name):
