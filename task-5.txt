@@ -26,8 +26,8 @@ If the bug is reproducible in lower environments, it indicates a testing or cove
 
 In parallel, I coordinate with the development team for a hotfix, validate the fix, and ensure safe deployment.
 
-Post-resolution, I conduct a root cause analysis focusing on:
+I also analyze the user story and acceptance criteria to see if:
 
-Why the scenario was not covered in QA
-Whether requirements or acceptance criteria were unclear
-Gaps in regression or test data
+The scenario was missed during test design
+The requirement itself was ambiguous or incomplete
+Overall, my approach is to not just fix the bug, but to systematically close gaps in requirements, testing, and process to prevent recurrence.
